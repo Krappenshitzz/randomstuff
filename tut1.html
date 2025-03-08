@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>WARNING !!!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+        /* Horror Background */
+        body {
+            background-color: black;
+            color: red;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            text-align: center; 
+            margin: 0;
+            font-family: 'Creepster', cursive;
+            text-shadow: 3px 3px 10px red;
+        }
+
+        /* Blood Dripping Effect 
+        .blood {
+            position: relative;
+            font-size: 50px;
+            color: red;
+            text-shadow: 5px 5px 15px red;
+        }
+
+        .blood::after {
+            content: "🩸🩸🩸";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50px;
+            font-size: 30px;
+            animation: drip 2s infinite alternate;
+        }*/
+
+        @keyframes drip {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(10px); opacity: 0.5; }
+        }
+
+        /* Strong Text (No blinking, just creepy) */
+        strong {
+            font-size: 32px;
+        }
+
+        /* Button Styling */
+        button {
+            background-color: darkred;
+            border: 3px solid red;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 180px;
+            height: 80px;
+            font-size: 22px;
+            font-family: 'Creepster', cursive;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            transition: 0.3s;
+            box-shadow: 0 0 15px red;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Button Hover Effect */
+        button:hover {
+            background-color: black;
+            color: red;
+            box-shadow: 0 0 20px red;
+            transform: scale(1.1);
+        }
+
+        /* Blood Splash Effect on Button 
+        button::before {
+            content: "🩸";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            opacity: 0;
+            transition: 0.3s;
+        }*/
+
+        button:hover::before {
+            opacity: 1;
+            top: 5px;
+        }
+
+        /* Fix the button link appearance */
+        button a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 80px;
+        }
+
+        /* Image Styling */
+        img {
+            max-width: 280px;
+            max-height: 250px;
+            filter: brightness(0.7) contrast(1.5);
+        }
+
+        /* Add a creepy sound */
+        audio {
+            display: none;
+        }
+        .blood{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Scary Sound -->
+    <audio autoplay loop>
+        <source src="https://www.fesliyanstudios.com/play-mp3/4386" type="audio/mp3">
+    </audio>
+
+    <div class="blood">WARNING!!!</div>
+    <img src="https://cdn.inprnt.com/thumbs/2a/ca/2aca062e5461cef1dba104324da9115c.jpg" alt="Warning Image">
+    <br>
+    <strong>To LIVE your NEXT 3 minutes and 32 seconds</strong>
+    <br>
+    <button>
+        <a href="https://www.youtube.com/watch?v=uHgt8giw1LY&ab_channel=Licale" target="_blank">Click HERE !!</a>
+    </button>
+    <br>
+    <strong>OR ELSE <br>YOU WILL DIE</strong>
+</body>
+</html>
